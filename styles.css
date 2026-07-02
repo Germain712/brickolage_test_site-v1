@@ -376,3 +376,34 @@ body {
   background-color: var(--v3-surface);
   border-top: 1px solid var(--v3-muted);
 }
+
+.v3-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.v3-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--v3-text);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(31, 95, 61, 0.15);
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.v3-social-links a:hover,
+.v3-social-links a:focus-visible {
+  background-color: rgba(46, 139, 87, 0.12);
+  color: var(--v3-primary);
+  transform: translateY(-1px);
+}
